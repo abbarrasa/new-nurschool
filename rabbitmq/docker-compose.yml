@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  rabbit:
+    container_name: nurschool-rabbitmq
+    build:
+      context: ./docker
+      args:
+        UID: $U_ID
+    volumes:
+      - ./docker/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - nurschool-network
+
+networks:
+  nurschool-network:
+    external: true

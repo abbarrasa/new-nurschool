@@ -1,0 +1,6 @@
+.idea
+.vscode
+.DS_store
+**/docker-compose.yml
+rabbitmq/rabbit*.json
+!rabbitmq/docker-compose.yml
