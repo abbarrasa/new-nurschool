@@ -4,3 +4,6 @@
 [submodule "platform"]
 	path = platform
 	url = https://github.com/abbarrasa/nurschool-platform.git
+[submodule "notifier"]
+	path = notifier
+	url = https://github.com/abbarrasa/nurschool-notifier.git
